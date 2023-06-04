@@ -1,7 +1,7 @@
 const yesDl = document.querySelector('#yesDl');
 
 yesDl.addEventListener('click',function() {
-    alert('...')
+    alert('[ . . . ]')
 });
 
 const noDl = document.querySelector('#noDl');
