@@ -1,7 +1,7 @@
 const yesDl = document.querySelector('#yesDl');
 
 yesDl.addEventListener('click',function() {
-    alert('Si pero no como antes...')
+    alert('...')
 });
 
 const noDl = document.querySelector('#noDl');
