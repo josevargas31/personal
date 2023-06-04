@@ -1,0 +1,73 @@
+
+body {
+    border: 10px dotted rgb(255, 160, 122);
+    background: -webkit-linear-gradient(Cornsilk, BurlyWood);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: letra;
+    height: 85vh;
+    padding: 15px 30px;
+    margin: 20px;  
+
+}
+
+* {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    size: cover;
+    margin-left: 480px;
+    margin: 0 auto;
+}
+.fotos {
+    margin-right: 30px;
+}
+.box {
+    width: 160px;
+    height: 20px;
+    border: 3px solid DimGray;
+    
+}
+.box_loading {
+    height: 100%;
+    width: 100%;
+    animation: loading 3s;
+    background-color: rgb(192, 192, 192);
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }  
+  100% {
+     width: 160px;
+  }
+}
+h1 {
+    font-weight: 700;
+    font-size: 2em;
+}
+p {
+    font-weight: 700;
+    font-size: 1,3em;
+}
+@font-face {
+    font-family: letra;
+    src: url(../fons/Nice\ Sugar.otf);
+}
+
+
+/* border: 10px dotted rgb(222, 184, 135);
+background: -webkit-linear-gradient(Tan, Wheat); */

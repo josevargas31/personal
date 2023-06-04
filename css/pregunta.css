@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+body {
+    background: -webkit-linear-gradient(MistyRose, DarkGray);
+    font-family: cursiva;
+    font-weight: 900;
+}
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+p {
+  font-size: xx-large;
+  padding: 15%;
+
+}
+button {
+    font-size: xx-large;
+    padding: 0.75em;
+    list-style: none; /*Para quitar el boton de inicio en los link*/
+    display: inline-block; /*  */
+    padding: 15px 30px; /* El espacio entre cada cuadro con respecto al texto */
+    font-size: 14px; /*Se establece el tamaño de la fuente*/
+    cursor: pointer; /*  */
+    text-align: center; /*  */
+    text-decoration: none; /*  */
+    outline: none; /*  */
+    color: rgb(169, 169, 169); /* La informacion del button */
+    background-color: rgb(245, 222, 179); /*Color del fondo del boton*/
+    border: none; /*Se le hace un color de borde dependiendo de los siguientes datos, ej {2px solid red) se utilizaria sin las comillas*/
+    border-radius: 15px;/*Cambia las esquinas rodondeandolo*/
+ 
+    box-shadow: 0 9px rgb(210, 180, 140); /* Sombra del boton*/
+    margin-right: 20px; /*separar los botones*/
+}
+#yesDl {
+transform: translate(-100%,0);
+}
+#noDl {
+    position: absolute;
+}
+@font-face {
+    font-family: cursiva;
+    src: url(../fonts/Blacksword.otf);
+}

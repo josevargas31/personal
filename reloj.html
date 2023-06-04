@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+    <link rel="stylesheet" href="css/reloj.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div id="time">
+        <div class="circle" id="sec-color">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="120" cy="120" r="120" id="ss"></circle>
+            </svg>
+        </div>
+        
+        <div id="circle" id="min-color">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="100" cy="100" r="100" id="mm"></circle>
+                </svg>
+        </div>
+
+        <div id="circle" id="hr-color">
+                <div class="dots hr_dot"></div>
+                <svg>
+                    <circle cx="80" cy="80" r="100" id="hh"></circle>
+                </svg>
+        </div>
+
+        <div class="timeBx">
+            <div id="hours">00</div>
+            <div id="minutes">00</div>
+            <div id="seconds">00</div>
+            <div class="ap">
+            <div id="ampm"></div>
+            </div>
+        </div>     
+    </div>
+
+    <script src="js/reloj.js"></script>
+</body>
+</html>
