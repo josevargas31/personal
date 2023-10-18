@@ -153,7 +153,7 @@ body {
     grid-area: article-2;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/disney_500x707.png);
+    background-image: url(../img/corazones_224x380.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -163,7 +163,7 @@ body {
     grid-area: article-3;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/game_of_thrones_480x800.png);
+    background-image: url(../img/pregunta_474x762.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -172,7 +172,7 @@ body {
     grid-area: article-4;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/listas_500x889.png);
+    background-image: url(../img/bicho_342x567.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -181,7 +181,7 @@ body {
     grid-area: article-5;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/colores_500x889.png);
+    background-image: url(../img/espiral_349x545.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -190,7 +190,7 @@ body {
     grid-area: article-6;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/margin_367x584.png);
+    background-image: url(../img/lluvia_colores_289x571.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -199,7 +199,7 @@ body {
     grid-area: article-7;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/catalogo_500x820.png);
+    background-image: url(../img/cargando_225x450.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -208,7 +208,7 @@ body {
     grid-area: article-8;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/tabla_500x818.png);
+    background-image: url(../img/puntos_300x600.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -217,7 +217,7 @@ body {
     grid-area: article-9;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/formulario_500x809.png);
+    background-image: url();
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -226,7 +226,7 @@ body {
     grid-area: article-10;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/menu_iconos_500x795.png);
+    background-image: url(../img/galaxia_371x685.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -235,7 +235,7 @@ body {
     grid-area: article-11;
     border-radius: 10px;
     background-color: rgb(64, 64, 64, .7);
-    background-image: url(../img/menu_sena_420x611.png);
+    background-image: url(../img/atomos_300x550.png);
     background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
     background-repeat: no-repeat; /* para que no se repita la imagen */
     background-position: center; /* centra la imagen en el contendor div */
@@ -407,7 +407,7 @@ h3 {
     background-position-y: bottom;  
 }
 .container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     /* height: 100%; */
     /* animation: vapour 2s linear infinite;  */
