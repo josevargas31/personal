@@ -1,4 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos */
+.main-page {
+    grid-area: main-page;
+}
 body {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: "empty-left           main-page                   empty-right" /
+        minmax(50px, 1fr) minmax(200px, 1500px) minmax(50px, 1fr);
+
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.main-content { /* sirve para volver mi contenedor en una cuadricula */
+    gap: 70px; /* el espacio entre contenedores */
+    margin-bottom: 50px; /* espacio entre la parte inferior con el contenido */
+    margin-top: 10px; /* espacio entre el header la imagen principal */
+    display: grid;
+    grid-template: "article-1 article-2 article-3 article-4"
+                    "article-5 article-6 article-7 article-8"
+                    "article-9 article-10 article-11 article-12"
+                    "article-13 article-14 article-15 article-16"
+                    "article-17 article-18 article-19 article-20"
+/*         "text-article-1 text-article-2 text-article-3"
+        "nuew-1 nuew-2 nuew-3"
+        "text-article-1-2 text-article-2-2 text-article-3-2" */;
+
+} 
+@media only screen and (max-width: 1200px) {
+    .box {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template: "article-1 article-2 article-3"
+            /* "text-article-1 " */
+            "article-4 article-5 article-6"
+            "article-7 article-8 article-9"
+            "article-10 article-11 article-12"
+            "article-13 article-14 article-15"
+            "article-16 article-17 article-18"
+            "article-19 article-20 article-21"
+
+           /*  "text-article-2 "
+            "article-3"
+            "text-article-3"
+            "nuew-1 "
+            "text-article-1-2 "
+            "nuew-2"
+            "text-article-2-2"
+            "nuew-3"
+            "text-article-3-2"; */
+    }
+
+}
+@media only screen and (max-width: 900px) {
+    .box {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template: "article-1 article-2"
+            /* "text-article-1 " */
+            "article-3 article-4"
+            "article-5 article-6"
+            "article-7 article-8"
+            "article-9 article-10"
+            "article-11 article-12"
+            "article-13 article-14"
+            "article-15 article-16"
+            "article-17 article-18"
+            "article-19 article-20"
+            "article-21 article-22"
+           /*  "text-article-2 "
+            "article-3"
+            "text-article-3"
+            "nuew-1 "
+            "text-article-1-2 "
+            "nuew-2"
+            "text-article-2-2"
+            "nuew-3"
+            "text-article-3-2"; */
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .box {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template: "article-1 " auto
+            /* "text-article-1 " */
+            "article-2"
+            /* "text-article-2 " */
+            "article-3"
+            /* "text-article-3" */
+            "article-4"
+            "article-5"
+            "article-6"
+            "article-7"
+            "article-8"
+            "article-9"
+            "article-10"
+            "article-11"
+            "article-12"
+            "article-13"
+            "article-14"
+            "article-15"
+            "article-16"
+            "article-17"
+            "article-18"
+            "article-19"
+            "article-20"
+
+    }
+
+}
+.article {
+    border-radius: 10px;
+    height: 400px;
+    grid-area: article-1;
+}
+.article-1 {
+    grid-area: article-1;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/netflix_500x859.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-2 {
+    grid-area: article-2;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/disney_500x707.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+
+.article-3 {
+    grid-area: article-3;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/game_of_thrones_480x800.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-4 {
+    grid-area: article-4;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/listas_500x889.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-5 {
+    grid-area: article-5;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/colores_500x889.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-6 {
+    grid-area: article-6;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/margin_367x584.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-7 {
+    grid-area: article-7;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/catalogo_500x820.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-8 {
+    grid-area: article-8;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/tabla_500x818.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-9 {
+    grid-area: article-9;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/formulario_500x809.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-10 {
+    grid-area: article-10;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/menu_iconos_500x795.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-11 {
+    grid-area: article-11;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/menu_sena_420x611.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-12 {
+    grid-area: article-12;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/media_queries_393x628.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-13 {
+    grid-area: article-13;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/menu_subitems_321x534.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-14 {
+    grid-area: article-14;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/toggle_500x779.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+.article-15 {
+    grid-area: article-15;
+    border-radius: 10px;
+    background-color: rgb(64, 64, 64, .7);
+    background-image: url(../img/flex_box_500x882.png);
+    background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+    background-repeat: no-repeat; /* para que no se repita la imagen */
+    background-position: center; /* centra la imagen en el contendor div */
+}
+
+
+.style-content { /* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Decoracion de la lluvia de mi pagina web */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.fondo {
+    background-image: url(../img/paisaje.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: bottom;  
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    /* height: 100%; */
+    /* animation: vapour 2s linear infinite;  */
+}
+
+/* @keyframes vapour {
+    0%, 100% {
+        backdrop-filter: blur(0);
+    }
+    50% {
+        backdrop-filter: blur(2px);
+    }
+} */
+
+.container i {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: -10px;
+    background: #d3d3d3;
+    animation: rain linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        top: -10px;
+    }
+    100% {
+        top: 150vh;
+    }
+}body {
     background-color:  rgb(192, 192, 192);
 }
 .boto1 {
